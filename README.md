@@ -3,6 +3,8 @@ Convert images to ASCII art, like this one!
 
 ![La Joconde (Mona Lisa) in ASCII](images/the_mona_lisa_in_ASCII.png)
 
+This project is a submission to my first hackathon, Sonoma Hacks 3.0! See [the project page](https://devpost.com/software/image2ascii)
+
 ## Project Overview
 Image2ASCII is a command line application that converts images to ASCII art.
 
@@ -20,6 +22,7 @@ Clone the repo, download the image of choice, and run the following command:
 python main.py -f image_filepath
 ```
 
+That's it. You will the the resulting image printed out in the terminal.
 
 ## Project Files
 
