@@ -8,7 +8,7 @@ Image2ASCII is a command line application that converts images to ASCII art.
 
 Converting images to ASCII is surprisingly simple, it can be done in 3 steps:
 1. Computing the pixel matrix (a fancy way of saying go through each pixel in the image)
-2. Convert the RGB values(the color of the pixel) using some formula to ASCII characters (we'll get to this later)
+2. Convert the RGB values(the color of the pixel) using some formula to ASCII characters
 3. Print the ASCII characters
 
 That's it!
