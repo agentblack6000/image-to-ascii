@@ -13,7 +13,17 @@ Converting images to ASCII is surprisingly simple, it can be done in 3 steps:
 
 That's it!
 
-## `main.py`
+## Run image2ASCII
+Clone the repo, download the image of choice, and run the following command:
+
+```shell
+python main.py -f image_filepath
+```
+
+
+## Project Files
+
+### `main.py`
 
 #### `def calculate_pixel_luminosity(red: int, green: int, blue: int) -> int:`
 Calculates and returns the pixel luminosity by forming a weighted average to account for
