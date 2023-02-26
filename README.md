@@ -1,4 +1,4 @@
-# Image to ASCII art
+# image2ASCII
 Convert images to ASCII art, like this one!
 
 ![La Joconde (Mona Lisa) in ASCII](images/the_mona_lisa_in_ASCII.png)
@@ -32,7 +32,7 @@ human perception, using this formula:
     L = 0.2126 R + 0.7152 G + 0.0722 B
 
 Since humans are more sensitive to green light, it is weighted the most heavily, followed
-by red, then blue
+by red, then blue.
 
 #### `def compute_ascii_character_map(pixel_luminosity: int, maximum_luminosity: int) -> str:`
 Computes ASCII character based on the luminosity percentage, multiplied the length of the
