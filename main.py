@@ -2,6 +2,9 @@
 Image to ASCII art
 Converts image to ASCII by mapping each pixel's luminosity to an ASCII matrix, then prints it out.
 """
+import sys
+from argparse import ArgumentParser
+
 from PIL import Image
 
 IMAGE_PATH = "images/the_mona_lisa.jpeg"
@@ -14,7 +17,21 @@ def main() -> None:
     Prints out the image in ASCII
     :rtype: None
     """
-    image = Image.open(IMAGE_PATH)
+
+    parser = ArgumentParser(description="Converts image to ASCII by mapping each pixel's luminosity to an "
+                                        "ASCII matrix, then prints it out")
+    parser.add_argument("-f", "--filename", nargs=1, dest="filename", help="image file name")
+
+    args = parser.parse_args()
+
+    if len(sys.argv) != 3:
+        parser.print_help()
+        sys.exit()
+
+    try:
+        image = Image.open(args.filename[0])
+    except FileNotFoundError:
+        sys.exit("Invalid image file name")
 
     # Resized to fit a full screen terminal window.
     image = image.resize((60, 100))
